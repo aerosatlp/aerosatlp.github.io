@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Magra&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+body a {
+  cursor: pointer;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 5%;
+}
+.logo img {
+  width: auto;
+  height: 70px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  font-family: "Magra", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin: 0 40px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.hero,
+.Prototype {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1%;
+  height: 600px;
+}
+.hero .content,
+.Prototype .content {
+  width: 50%;
+  letter-spacing: 4px;
+  font-family: "Magra", sans-serif;
+  font-size: 28px;
+  font-weight: lighter;
+  text-align: left;
+  padding: 1%;
+  line-height: 2em;
+}
+.hero .content a,
+.About .content a,
+.Prototype .content a {
+  font-size: 16px;
+  color: #fff;
+}
+.hero .content div {
+  text-align: center;
+}
+
+.hero img,
+.Prototype img {
+  width: auto;
+  height: 500px;
+}
+
+.About {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+}
+
+.About .content {
+  width: 600px;
+  letter-spacing: 4px;
+  font-family: "Magra", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 3rem;
+}
+
+.Releases {
+  margin: 0;
+  padding: 1%;
+  display: flex;
+  color: #171717;
+  background-color: #fff;
+  height: 50px;
+  letter-spacing: 4px;
+  font-family: "Magra", sans-serif;
+  justify-content: space-around;
+  text-align: center;
+}
+.Hardware {
+  margin: auto;
+  height: 700px;
+  display: flex;
+}
+.Hardware .carousel-inner #rasp {
+  background-image: url("img/rasp.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.Hardware .carousel-inner #lora {
+  background-image: url("img/lora.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.Hardware .carousel-inner #camera {
+  background-image: url("img/camera.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.Hardware .carousel-item {
+  justify-content: center;
+  padding: 5%;
+}
+.Hardware #imageCarousel p {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Magra", sans-serif;
+}
+.Hardware #imageCarousel .des {
+  font-size: 24px;
+  padding: 5% 10%;
+  line-height: 2em;
+  letter-spacing: 2px;
+}
+
+.Hardware .floating-bar {
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Set the background color of the bar */
+  color: #fff; /* Set the text color */
+  font-weight: bolder;
+  z-index: 1000; /* Ensure the bar is above other content */
+  height: 100vh;
+  padding: 15% 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .logo {
+  align-items: center;
+}
+
+.footer-content {
+  padding-top: 10%;
+  display: inline-block;
+}
+.social-icons {
+  padding-bottom: 5%;
+}
+.social-icons a {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.footer-content .sponsor-content {
+  font-size: 32px;
+  font-family: "Magra", sans-serif;
+  font-weight: bold;
+}
+.sponsor-content .sponsor-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sponsor-content a {
+  font-size: 16px;
+  color: #171717;
+  text-decoration: none;
+}
+
+.sponsor-content a:hover {
+  text-decoration: underline;
+}
+
+.vertical-line {
+  border-left: 2px solid #333; /* Set the color of the vertical line */
+  height: 200px; /* Set the height of the vertical line to full viewport height */
+  margin-top: 8%; /* Set margin for spacing */
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Bootstrap JavaScript and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-K1hau+3Yl73fE57mIDo5lp9Zufa/ZsYDYKx4gGzY4we0U4Ohcq63wSdaIb3sZuj3RttC+5b+Z9fAMX8sL9r1gQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo-black.png" type="image/png">
+    <title>Aerosat Launch Program</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#releases">Releases</a>
+                <a href="#">Documentation</a>
+                <a href="#"><img src="img/notify.png" alt="notify"/></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="content">
+            <p>Introducing "<span style="background-color: #fff;color:#171717;">I-SAT Module v1.1</span>",
+            The Indigenous Satellite Module 
+            having capability of Atmospheric 
+            data measurement, Location, Camera visibility 
+            and Lora technology for long range 
+            data transmission.
+            </p>
+            <a href="#releases">Releases.</a>
+            <div><a href="#about" style=" text-decoration: none; text-align:center;">Scroll Down<img src="img/icons8-down-arrow-50.png" 
+                style="width:auto; height: 20px;" alt="downarrow"/></a></div>
+        </div>
+        <div><img src="img/module.png" alt="Module"/></div>
+    </div>
+
+    <div class="About" id="about">
+        <div style=" box-shadow: 15px 15px 21.399999618530273px rgba(0, 0, 0, 0.50);">
+            <video width="640" height="360" controls>
+                <source src="img/Aerosatpromo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="content">
+            <p>About Project</p>
+            <p style="font-size: 18px;">Aerosat Launch Program is Satellite Launch Project designed by a group of Undergraduate students.
+               Our Mission is to send a satellite to high altitude in atmosphere and study the atmospheric data.
+               We have developed a satellite less with sensors and modules. This Project includes acquisition 
+               of atmospheric data, study the stratosphere, capture images.</p>
+            <div><a href="#">Download<img src="img/icons8-down-arrow-50.png" 
+                style="width:auto; height: 20px;" alt="downarrow"/></a></div>
+        </div>
+    </div>
+
+    <div class="Releases" id="releases">
+        <!-- <div><img src="img/left-arrow.png" 
+            style="width:auto; height: 10px;" alt="leftarrow"/></div> -->
+        <div>
+            <p >We have released the documentation and repository of our first prototype “<a href="https://github.com/Aerosat-Launch-Program/Prototype-v1.git" target="_blank" style="font-size: 16px;
+                color: #171717;">I-SAT v.1.0</a>”.</p>
+        </div>
+    </div>
+
+    <div class="Prototype">
+        <div class="content">
+            <p>Prototype</p>
+            <p style="font-size: 18px;">ISAT-8266 is first version of our prototype or satellite series ISAT. The purpose behind this prototype to create a foundation of ISAT,
+             to understand the complexity and working of satellite communication and data visualization.
+            </p>
+            <a href="https://github.com/Aerosat-Launch-Program/Prototype-v1.git" target="_blank">Github.</a>
+        </div>
+        <div><img src="img/prototype.png" alt="prototype"/></div>
+    </div>
+    <div class="Hardware">
+        <div class="floating-bar">
+            <!-- <p style=" transform: rotate(-90deg);font-size:32px;padding:0;">Hardware</p> -->
+            <img src="img/Hardware.png" alt="">
+        </div>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="rasp">
+                    <p>Raspberry Pi</p>
+                    <p class="des">The Raspberry Pi is a compact single-board computer renowned for its affordability and versatility. 
+                    Developed by the Raspberry Pi Foundation, features a quad-core ARM Cortex-A72 processor and supports
+                    up to 4GB or 8GB of RAM. With Gigabit Ethernet, Wi-Fi, and Bluetooth connectivity, along with USB ports,
+                    HDMI output, and a microSD card slot, it provides a robust platform for a variety of projects. The GPIO
+                    pins enable hardware interfacing, making it a popular choice for hobbyists, educators, and professionals
+                    exploring applications ranging from home automation to programming education.
+                    </p>
+                </div>
+                <div class="carousel-item" id="lora">
+                    <p>Lora Technology</p>
+                    <p class="des">LoRa (Long Range) technology is a wireless communication protocol designed for long-range, 
+                    low-power applications in the Internet of Things (IoT). It operates in the sub-gigahertz frequency bands, 
+                    offering extended communication ranges with minimal power consumption. LoRaWAN, a key application of 
+                    LoRa technology, enables secure and efficient communication between devices, making it a popular choice 
+                    for IoT deployments in smart cities, agriculture, and industrial settings.
+                    </p>
+                </div>
+                <div class="carousel-item" id="camera">
+                    <p>Camera & Sensors</p>
+                    <p class="des"> A Raspberry Pi can be integrated with cameras and sensors to simulate satellite functions. 
+                        Cameras, like the Raspberry Pi Camera Module, provide imaging capabilities, capturing visual data 
+                        for Earth observation or educational purposes. Sensors, such as accelerometers, gyroscopes, or 
+                        environmental sensors, can be added to gather information on the simulated satellite's orientation, 
+                        movement, or environmental conditions.
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo">
+            <img src="img/logo-black.png" style="width:auto; height: 400px;"/>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/aerosatlaunchprogram/" target="_blank"><img src="img/LinkedIn.png"/></a>
+                <a href="https://twitter.com/aerosatlp" target="_blank"><img src="img/TwitterX.png" alt="twittericon"></a>
+                <a href="https://www.instagram.com/aerosatlp/" target="_blank"><img src="img/Instagram.png" alt="instgramicon"></a>
+                <a href="https://github.com/Aerosat-Launch-Program" target="_blank"><img src="img/GitHub.png" alt="githubicon"></a>
+               
+            </div>
+            <div class="sponsor-content">
+                <p>We are looking for sponsors!</p>
+                <div class="sponsor-link">
+                    <a href="mailto:aerosatlp@gmail.com">aerosatlp@gmail.com</a>
+                    <div>|</div>
+                    <a href="tel:+919825404463">+91 98254 04463</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
