@@ -80,6 +80,9 @@ body a {
   width: auto;
   height: 500px;
 }
+.para {
+  font-size: 18px;
+}
 
 .About {
   background-color: #171717;
@@ -111,6 +114,10 @@ body a {
   font-family: "Magra", sans-serif;
   justify-content: space-around;
   text-align: center;
+}
+.Releases p {
+  font-size: 16px;
+  color: #171717;
 }
 .Hardware {
   margin: auto;
@@ -170,7 +177,10 @@ body a {
 .footer .logo {
   align-items: center;
 }
-
+.footer .logo img {
+  width: auto;
+  height: 400px;
+}
 .footer-content {
   padding-top: 10%;
   display: inline-block;
@@ -206,4 +216,96 @@ body a {
   border-left: 2px solid #333; /* Set the color of the vertical line */
   height: 200px; /* Set the height of the vertical line to full viewport height */
   margin-top: 8%; /* Set margin for spacing */
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+
+  .logo img {
+    height: 50px;
+  }
+  .menu {
+    display: none;
+  }
+  .hero {
+    display: block;
+    height: auto;
+  }
+  .hero .content {
+    width: auto;
+    font-size: 16px;
+    padding: 6%;
+  }
+  .hero .content a,
+  .About .content a,
+  .Prototype .content a {
+    font-size: 12px;
+  }
+  .hero img {
+    width: 370px;
+    height: auto;
+  }
+  .About {
+    display: block;
+    height: auto;
+  }
+  .About video {
+    width: 360;
+    height: 280;
+    display: none;
+  }
+  .About .content {
+    padding: 6%;
+    line-height: 2rem;
+    width: auto;
+  }
+  .About .content .para {
+    font-size: 12px;
+  }
+  .Releases {
+    height: 70px;
+    padding: 2%;
+  }
+  .Releases p,
+  .para {
+    font-size: 12px;
+  }
+  .Prototype {
+    display: block;
+    height: auto;
+  }
+  .Prototype .content {
+    width: auto;
+    padding: 6%;
+    line-height: 2rem;
+  }
+  .Prototype img {
+    width: 320px;
+    height: auto;
+  }
+  .Hardware {
+    height: auto;
+  }
+  .Hardware .floating-bar {
+    display: none;
+  }
+  .Hardware .carousel-inner #rasp,
+  .Hardware .carousel-inner #lora,
+  .Hardware .carousel-inner #camera {
+    height: auto;
+  }
+  .Hardware #imageCarousel .des {
+    font-size: 12px;
+  }
+  .footer {
+    display: block;
+    padding: 6%;
+  }
+  .footer .vertical-line {
+    display: none;
+  }
+  .footer .logo img {
+    width: auto;
+    height: 300px;
+  }
 }
